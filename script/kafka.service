@@ -1,0 +1,11 @@
+[Unit]
+Description=Kafka Daemon
+
+[Service]
+Type=simple
+User=root
+ExecStart=/home/ec2-user/kafka/bin/kafka-server-start.sh /home/ec2-user/kafka/config/server.properties
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
