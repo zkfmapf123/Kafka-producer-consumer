@@ -1,7 +1,7 @@
 locals {
   ec2_ins = {
-    "producer-fluentbit" : "producer",
-    "consumer" : "consumer"
+    "kafka-producer" : "producer",
+    "kafka-consumer" : "consumer"
   }
 }
 
@@ -124,6 +124,7 @@ resource "aws_instance" "instance" {
   }
 
   tags = {
-    Name = each.value
+    Name = each.key
+    Properties= each.value
   }
 }
