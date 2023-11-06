@@ -1,9 +1,5 @@
 # Data-Pipeline use Kafka
 
-## Architecture
-
-![prod_con](./public/prod-con.png)
-
 ## Steps
 
 ```sh

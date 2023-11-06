@@ -16,7 +16,7 @@
     ln -s kafka_2.12-3.6.0 kafka
 ```
 
-## Twitter Producer 쏘기
+## Twitter Producer 쏘기 (TEST)
 
 ```sh
     bin/kafka-console-producer.sh --topic twitter --bootstrap-server [private-ip]:9092
